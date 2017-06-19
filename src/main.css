@@ -514,3 +514,10 @@ div.slide__boilerplate + video {
   background: none;
   padding: 0;
 }
+
+/*********************************************
+ * Custom CSS - Andrew Solis
+ *********************************************/
+sup.reference {
+  font-size: 0.75em;
+}

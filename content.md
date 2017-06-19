@@ -1,43 +1,11 @@
 <!-- Title slide. -->
-<!-- .slide: data-background="media/img/aframe.jpg" -->
 
-<div class="talk-title">
-  <h1>A-Frame School</h1>
-  <h3>An interactive course for WebVR</h3>
-  <p class="talk-info">
-    <b><a href="https://aframe.io">aframe.io</a></b>
-  </p>
-</div>
+<!-- .slide: data-background="media/img/TACC.jpeg" -->
+#A-frame: hand's on Tutorial<sup class="reference">[1][2]</sup>
 
-------
-
-## Prologue
-
-<!-- .slide: data-background="media/img/aframe.jpg" -->
-
-> Using [Glitch](https://glitch.com), the School will give you step-by-step
-> exercises to help you jump into [WebVR](https://webvr.rocks)! The School has
-> sections going &larr; and &rarr; but also subsections going **&uarr; and
-> &darr;**:
-
-<img class="stretch" data-src="media/img/navigation.jpg">
-
-**Navigate &darr;**
-
----
-
-### Resources During Your Journey
-
-1. [Skim through the docs and FAQ](https://aframe.io/docs/)
-2. [Get help from peeps on Slack](https://aframe.io/community/#slack)
-3. [Ask questions on Stack Overflow](http://stackoverflow.com/questions/ask/?tags=aframe)
-4. If you are in a live workshop event, please raise your hand if you have a question!
-
-**Navigate &rarr;**
-
-
-<!-- Lessons start below. -->
-
+<!-- NOTES -->
+- Hand's on Built on to of other presentations
+- First going to give a brief overview of basic HTML then jump right in
 
 ------
 
@@ -174,16 +142,54 @@ network have access to your local server
 <img class="stretch" data-src="media/img/webdevenv3.jpg">
 
 ------
+## HTML <sup class="reference">[3]</sup>
 
-## Try Out A-Frame Examples
+**H**yper**T**ext **M**arkup **Language**
 
-> Play with examples on your desktop or smartphone from the [A-Frame
-> Homepage](https://aframe.io), [A-Frame Blog](https://aframe.io/blog/), or
-> [awesome-aframe](https://github.com/aframevr/awesome-aframe). See
-> [webvr.rocks](https://webvr.rocks) for information on setting up WebVR with a
-> headset if you have one.
+* It is <span style="color: red">NOT</span> a programming language
+* it <span style="color: green">IS</span> a _markup language_
 
-<img data-src="media/img/examples.gif">
+<!-- NOTES -->
+* Tells the browser how to structure the webpage
+* Follows the same paradigm as XML, however XML describes objects, whereas HTML describes the pages layout
+* Uses tags to enclose, wrap, or mark up parts of the content to appear in a certain way
+---
+<div>
+  <div><img data-src="media/img/grumpy-cat-small.png"><sup class="reference">[4]</sup></div>
+</div>
+
+<!-- NOTES -->
+* Opening Tag: name of the element and where the element begins
+* Closing Tag: where the element ends
+* Content: Content of the element ( in this example text )
+* element: Opening tag, Closing Tag, content
+
+---
+
+## Nesting Elements
+
+<pre class="code-good"> <code class="html code-good"><p> It's a great <strong>big</strong> world </p>
+</code> </pre>
+
+<pre class="code-bad"> <code class="html code-bad"><p>It's a great <strong>big world</p></strong>
+</code></pre>
+
+<!-- NOTES -->
+ - Putting elements inside of other elements by including tags
+ - Make sure tags open and close correctly. Close the most recent tag and so on...
+---
+
+## Attributes
+
+<div>
+  <img data-src="media/img/grumpy-cat-attribute.png"><sup class="reference">[4]</sup>
+</div>
+
+<!-- NOTES -->
+* contain information about element you do not want to appear in the actual content
+* All attributes should have a space between it and the element name or previous attribute
+* It is the attribute name followed by an equals sign
+* An attribute vale with opening and closing quotes (single or double)
 
 ------
 
@@ -657,3 +663,14 @@ degree in WebVR.
 
 Head to [the documentation](https://aframe.io/docs/) for more guides to become
 a master.
+
+------
+# References
+
+1. Kevin, Ngo, and Po-chiang Chao. "A-Frame School." _aframe.io_ Mozilla Corporation, n.d. Web. 19 June 2017. <https://aframe.io/aframe-school/#/>.
+
+2. Matt, Vaughn. "CSHL A-frame." _Heroku_ TACC, n.d. Web. 19 June 2017. <http://cshl-aframe.kybernet.es/index.html#/1>.
+
+3. "Getting Started with HTML." _Mozilla Developer Network_ Mozilla Corporation, n.d. Web. 19 June 2017. <https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started>.
+
+4. Grumpy-cat-small. Digital image. _Mozilla Developer Network_ Mozilla Corporation, n.d. Web. 19 June 2017. <https://mdn.mozillademos.org/files/9347/grumpy-cat-small.png>.
