@@ -30,6 +30,14 @@
 - Codepen let's you type up and run your code in the browser
 - You can see your changes and the results of your code
 ---
+## cdn.aframe.io
+
+> Handled webset that a-frame provides for users to upload files and reference them in their code
+> at cdn.aframe.io
+
+<img class="stretch" data-src="media/img/a-frame-cdn.png">
+
+---
 
 ## Cloudinary
 
@@ -127,7 +135,7 @@ positions, rotations, scale) and get a feel for the workflow.
 
 ## Starter code
 
-Copy and post the code below or from Codepen here: https://codepen.io/ajs51210/pen/pwPEaE
+Copy and paste the code below or from Codepen here: https://codepen.io/ajs51210/pen/pwPEaE
 
 ```html
 <html>
@@ -177,7 +185,7 @@ Copy and post the code below or from Codepen here: https://codepen.io/ajs51210/p
 > in degrees. Use the right-hand rule to spatially visualize rotation. [Read about
 > rotations](https://aframe.io/docs/master/components/rotation.html).
 
-<a href="https://glitch.com/~aframe-school-rotation" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+> Rotation coordinate system: "x, y, z"
 
 1. Rotate the cylinder around the X axis so we see the bottom
 2. Rotate the box around the Y axis so the box is facing straight
@@ -195,8 +203,6 @@ and give it a rotation to see relative rotations
 > Add primitives the scene by adding HTML elements under `<a-scene>`.  [Read
 > about primitives](https://aframe.io/docs/0.5.0/primitives/).
 
-<a href="https://glitch.com/~aframe-school-primitives" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
-
 1. Add [`<a-torus-knot>`](https://aframe.io/docs/0.5.0/primitives/a-torus-knot.html) to the left
 2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.5.0/primitives/a-dodecahedron.html) to the right
 3. Add [`<a-text>`](https://aframe.io/docs/0.5.0/primitives/a-text.html) aligned in the center
@@ -213,7 +219,7 @@ and give it a rotation to see relative rotations
 > [Find your own images
 > online](https://aframe.io/docs/0.5.0/introduction/faq.html#where-can-i-find-assets),
 > and upload them through the assets section in Glitch or through the uploader on
-> [cdn.aframe.io](https://cdn.aframe.io). Wherever else you may upload, make sure
+> [cdn.aframe.io](https://cdn.aframe.io) or [Cloudinary](http://cloudinary.com/). Wherever else you may upload, make sure
 > it's being served with
 > [CORS](https://developer.mozilla.org/docs/Web/HTTP/Access_control_CORS) and
 > over HTTPS.
@@ -225,12 +231,50 @@ assets section (pictured above).
 
 ---
 
+## Starter Code
+
+Copy and paste the code below or copy from codepen here: https://codepen.io/ajs51210/pen/XgRpzJ
+
+```html
+<html>
+  <head>
+    <title>Textures - A-Frame School</title>
+    <meta name="description" content="Textures - A-Frame School">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky src=""></a-sky>
+
+      <a-box src="" position="-2 0.5 -4"></a-box>
+      <a-sphere src="" radius="0.5" position="0 0.5 -3"></a-sphere>
+      <a-cone src="" height="2" radius-top="0.1" position="0 1 -6"></a-cone>
+      <a-box src="" position="2 0.5 -4"></a-box>
+
+      <a-plane src="" rotation="-90 0 0" height="100" width="100"></a-plane>
+
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity="2" position="2 4 4"></a-light>
+    </a-scene>
+  </body>
+</html>
+```
+---
+
+<img class="stretch" src="media/img/assets.png">
+
+* Sky: https://cdn.glitch.com/b870d9ec-1139-44f9-b462-223e4a2c74e7%2Fsechelt.jpg?1490307995926
+* Box: https://cdn.glitch.com/b870d9ec-1139-44f9-b462-223e4a2c74e7%2Ftexture.jpg?1490308149272
+* sphere: https://cdn.glitch.com/b870d9ec-1139-44f9-b462-223e4a2c74e7%2Fcubes.jpg?1490308405745
+* cone: https://cdn.glitch.com/b870d9ec-1139-44f9-b462-223e4a2c74e7%2Fcone.jpg?1490308535937
+* Box: https://cdn.glitch.com/b870d9ec-1139-44f9-b462-223e4a2c74e7%2Fdirt.jpg?1490308269805
+* plane: https://cdn.glitch.com/b870d9ec-1139-44f9-b462-223e4a2c74e7%2Ffloor.jpg?1490307896453
+---
+
 ## Add Textures &mdash; Image Textures
 
 > Fill in the `src` HTML attributes with image URLs. [Read about applying an
 > image texture](https://aframe.io/docs/0.5.0/guides/building-a-basic-scene.html#applying-an-image-texture).
-
-<a href="https://glitch.com/~aframe-school-textures/" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 1. Add an image texture to the ground, `<a-plane>`
 2. Add image textures to `<a-box>`es
@@ -255,6 +299,68 @@ assets section (pictured above).
 
 ---
 
+## starter code
+
+Copy the code below or frame codepen here: https://codepen.io/ajs51210/pen/dRWvLw
+
+```html
+<!-- By Ada Rose Edwards @lady_ada_king. -->
+<html>
+  <head>
+    <title>Vaporwave - A-Frame</title>
+    <meta name="description" content="Vaporwave aesthetic text By Ada Rose Edwards (@lady_ada_king).">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="pink" src="https://img.gs/bbdkhfbzkk/stretch/http://i.imgur.com/1hyyIUi.jpg" crossorigin="anonymous" />
+        <img src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png" id="grid" crossorigin="anonymous">
+        <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous">
+        <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />
+        <a-asset-item id="dawningFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2FdawningOfANewDayRegular.typeface.json?1490305922844"></a-asset-item>
+        <a-asset-item id="exoFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2Black.typeface.json?1490305922150"></a-asset-item>
+        <a-asset-item id="exoItalicFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725"></a-asset-item>
+      </a-assets>
+
+      <a-entity scale="2 2 2" geometry="primitive: torusKnot" position="0 6 -10" material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
+        <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
+      </a-entity>
+
+      <a-entity position="-3 1 -6" rotation="5 0 0">
+        <a-entity
+          rotation="0 0 5"
+          position="0 2 0.2"
+          text-geometry="value: Virtual Reality; font: #dawningFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;"
+          material="color:lavenderblush; metalness:1; roughness: 0; sphericalEnvMap: #pink;"
+        ></a-entity>
+
+        <a-entity position="-0.5 0.5 -0.5" scale="0.6 1.2 1" text-geometry="value: VAPORWAVE; font: #exoFont; bevelEnabled: true; bevelSize: 0.1; bevelThickness: 0.1; curveSegments: 1; size: 1.5; height: 0.5;" material="color:pink; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"></a-entity>
+
+        <a-entity position="1 0 0.3" text-geometry="value: Aesthetic; font: #exoItalicFont; style: italic; size: 0.8; weight: bold; height: 0;"
+                  material="shader: flat; color: white"></a-entity>
+        <a-entity position="1 0 0.3" text-geometry="value: Aesthetic; font: #exoItalicFont; style: italic; size: 0.8; weight: bold; height: 0; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"
+                  material="shader: flat; color: white; transparent: true; opacity: 0.4"></a-entity>
+      </a-entity>
+
+      <a-entity
+        geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
+        material="src: #grid; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;"></a-entity>
+
+      <a-entity light="color: #ccccff; intensity: 1; type: ambient;" visible=""></a-entity>
+      <a-entity light="color: ffaaff; intensity: 1.5" position="5 5 5"></a-entity>
+      <a-entity light="color: white; intensity: 0.5" position="-5 5 15"></a-entity>
+      <a-entity light="color: white; type: ambient;"></a-entity>
+
+      <a-sky src="#sky" rotation="0 -90 0"></a-sky>
+    </a-scene>
+  </body>
+</html>
+```
+
+---
+
 ## Open the A-Frame Inspector &mdash; Change Component Values
 
 > Modify an entity by modifying its components on the right-hand panel. The
@@ -262,8 +368,6 @@ assets section (pictured above).
 >  This example includes an external [text-geometry
 > component](https://www.npmjs.com/package/aframe-text-geometry-component), which
 > the Inspector can modify the values of live.
-
-<a href="https://aframe-vaporwave.glitch.me" target="_blank">Open Example on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 1. Select one of the entities with text in the example
 2. Change the [`text-geometry` component's](https://www.npmjs.com/package/aframe-text-geometry-component) `value` property
@@ -280,8 +384,6 @@ assets section (pictured above).
 > is hooked up to the Registry so we can add components from the Registry in the
 > entity panel.
 
-<a href="https://aframe-vaporwave.glitch.me" target="_blank">Open Example on Glitch</a>  <!-- .element: class="cta-button glitch" -->
-
 1. Add the `static-body` component to ground grid
 2. Add the `dynamic-body` component to the torus knot (the purple pretzel in the back)
 3. Increase the Y-position of the torus knot to make it higher up
@@ -293,11 +395,36 @@ assets section (pictured above).
 
 ## Compose with Entity-Component &mdash; Break Primitives Down
 
+#### Starter code
+
+Copy and paste the code below or for from codepen here: https://codepen.io/ajs51210/pen/xrddZy
+
+```html
+<html>
+  <head>
+    <title>ECS - A-Frame School</title>
+    <meta name="description" content="ECS - A-Frame School">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
+```
+
+---
+
+## Compose with Entity-Component &mdash; Break Primitives Down
+
 > Behind the easy-to-use primitive elements, A-Frame is based on an
 > entity-component architecture. Decompose the primitive elements in the
 > *Hello, WebVR* example to `<a-entity>`s with their fundamental components.
-
-<a href="https://glitch.com/~aframe-school-ecs" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 [geometry]: https://aframe.io/docs/0.5.0/components/geometry.html
 [material]: https://aframe.io/docs/0.5.0/components/material.html
@@ -314,6 +441,50 @@ assets section (pictured above).
 
 ## Compose with Entity-Component &mdash; Add a Light Source Sphere
 
+#### Starter Code
+
+Copy the code below or fork from codepen here: https://codepen.io/ajs51210/pen/gRWWmP
+
+```html
+<html>
+  <head>
+    <title>ECS - A-Frame School</title>
+    <meta name="description" content="ECS - A-Frame School">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+        <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+      </a-assets>
+      
+      <a-entity id="lightSphere"></a-entity>
+
+      <a-entity geometry="primitive: box" material="color: red" position="0 0.5 -10"></a-entity>
+      <a-entity geometry="primitive: box" material="color: orange" position="-2 0.5 -8"></a-entity>
+      <a-entity geometry="primitive: box" material="color: yellow" position="2 0.5 -8"></a-entity>
+      <a-entity geometry="primitive: box" material="color: green" position="-4 0.5 -6"></a-entity>
+      <a-entity geometry="primitive: box" material="color: blue" position="4 0.5 -6"></a-entity>
+
+      <a-entity id="sky" geometry="primitive: sphere; thetaLength: 90; radius: 30" material="side: back; height: 2048; width: 2048; src: #skyTexture; shader: flat"></a-entity>
+
+      <a-entity light="type: ambient; color: #222"></a-entity>
+      <a-entity light="type: directional; color: #111" position="-1 1 0"></a-entity>
+
+      <a-entity id="ground" geometry="primitive: plane; height: 100; width: 100"
+                material="src: #groundTexture" rotation="-90 0 0"></a-entity>
+
+      <a-entity id="text" text="value: Show us the light!; color: #BBB" 
+                position="2.5 2 -8" scale="8 8 8"></a-entity>
+    </a-scene>
+  </body>
+</html>
+```
+---
+
+## Compose with Entity-Component &mdash; Add a Light Source Sphere
+
 > Use the entity-component pattern to add a sphere that also acts as a point
 > light source. Mix together the geometry, material, and light components to
 > compose this type of object.
@@ -322,15 +493,47 @@ assets section (pictured above).
 2. Attach the [geometry component](https://aframe.io/docs/0.5.0/components/geometry.html) configured to use `primitive: sphere` to the entity
 3. Attach the [material component](https://aframe.io/docs/0.5.0/components/material.html) configured to use `color: #FFF` and `shader: flat` to the entity
 4. Attach the [light component](https://aframe.io/docs/0.5.0/components/light.html) configured to use `type: point` to the entity
-5. **Extra Credit:** Add the animation component from [the Registry](https://aframe.io/registry/) via a `<script>` tag. Attach the animation configured to use `property: position` and `dir: alternate` and `loop: true` and provide a position value for `to: <POSITION>`
-
-<a href="https://glitch.com/~aframe-school-ecs-light-sphere" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+5. **Extra Credit:** Add the animation component from [the Registry](https://aframe.io/registry/) via a `<script>' tag. Attach the animation configured to use `property: position` and `dir: alternate` and `loop: true` and provide a position value for `to: <POSITION>`
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24060160/2c53a604-0b0f-11e7-9386-f83a3a9b4cfc.gif">>
 
 <a href="https://aframe-school-ecs-light-sphere.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element class="cta-button" -->
 
 ------
+
+## Extend with Entity-Component &mdash; From the Registry
+
+#### Starter Code
+
+Copy and paste the code below or fork from codepen here: https://codepen.io/ajs51210/pen/vZmmpO
+
+```html
+  <html>
+  <head>
+    <title>Registry - A-Frame School</title>
+    <meta name="description" content="Registry - A-Frame School">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="groundTexture" src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png">
+      </a-assets>
+      
+      <a-entity id="box" geometry="primitive: box; width: 1; depth: 1; height: 1" position="-1 0.5 -3" material="color: #4CC3D9"></a-entity>
+      <a-entity id="sphere" geometry="primitive: sphere; radius: 1.25" material="color: #EF2D5E" position="0 1.25 -5"></a-entity>
+      <a-entity id="cylinder" geometry="primitive: cylinder; radius: 0.5; height: 1.5" position="1 0.75 -3" material="color: #FFC65D"></a-entity>
+      
+      <a-entity id="plane" geometry="primitive: plane; width: 10000; height: 10000" material="color: #333; src: #groundTexture; repeat: 10000 10000; transparent: true; metalness: 0.6; roughness: 0.4" rotation="-90 0 0"></a-entity>
+      <a-entity id="sky" geometry="primitive: sphere; radius: 100" material="color: #666; shader: flat; side: back"></a-entity>
+      <a-entity light="type: ambient; color: #444"></a-entity>
+      <a-entity light="type: directional; color: #AAA" position="-1 2 0"></a-entity>
+    </a-scene>
+  </body>
+</html>
+```
+
+---
 
 ## Extend with Entity-Component &mdash; From the Registry
 
