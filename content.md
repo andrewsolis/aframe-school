@@ -11,12 +11,13 @@
 # Resources
 
 * Sign up for a free [Codepen.io](https://codepen.io/) account to host your demo project
-* Sign up for a free [Cloudinary](http://cloudinary.com/) account to host your assets
 * Have a copy of the [A-frame documentation](https://aframe.io/docs/0.5.0/introduction/) open as a reference
 
 #### Optional
-1. Sign up for a free [Github](https://github.com/) account to host your code
-2. sign up for a free [glitch](https://glitch.com/) account
+
+1. Sign up for a free [Cloudinary](http://cloudinary.com/) account to host your assets
+2. Sign up for a free [Github](https://github.com/) account to host your code
+3. sign up for a free [glitch](https://glitch.com/) account
 
 
 ---
