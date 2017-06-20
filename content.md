@@ -8,11 +8,46 @@
 - First going to give a brief overview of basic HTML then jump right in
 
 ------
+# Resources
 
-## Glitch &mdash; Introduction
+* Sign up for a free [Codepen.io](https://codepen.io/) account to host your demo project
+* Sign up for a free [Cloudinary](http://cloudinary.com/) account to host your assets
+* Have a copy of the [A-frame documentation](https://aframe.io/docs/0.5.0/introduction/) open as a reference
 
-> The School uses [Glitch](https://glitch.com) as your learning and development
-> environment for A-Frame.
+#### Optional
+1. Sign up for a free [Github](https://github.com/) account to host your code
+2. sign up for a free [glitch](https://glitch.com/) account
+
+
+---
+## Codepen.io
+
+> [Codepen.io](https://codepen.io/) is an online resource for testing and showcasing
+> code snippets for content for the web.
+
+<img class="stretch" data-src="media/img/codepen.png">
+
+- Codepen let's you type up and run your code in the browser
+- You can see your changes and the results of your code
+---
+
+## Cloudinary
+
+> [Cloudinary](http://cloudinary.com/) is a content management site that users
+> can use to host their assets.
+
+<img class="stretch" data-src="media/img/Cloudinary.png">
+
+- allows users to upload, store, manage, manipulate, and deliver images, videos,
+ and files for websites and apps.
+
+---
+
+## Glitch
+
+> [Glitch](https://glitch.com) is an online learning and development
+> environment where uses can code and host their assets, and have their own
+> site url.
 
 <img class="stretch" data-src="media/img/glitch.jpg">
 
@@ -24,122 +59,6 @@ anything up
   `https://aframe.glitch.me`)
 - Glitch updates your A-Frame site live on every code change
 - Glitch lets multiple people code on the same project
-
-*If you are interested in setting up a local development environment, skip ahead &darr;*
-
----
-
-## Glitch &mdash; Remixing an Existing Project
-
-> Glitch lets you remix or fork an existing project and use it as a base for your
-> new project. Before starting, we recommend linking Glitch to a [GitHub
-> account](https://github.com/). After you remix, Glitch will give you a random
-> project and URL name, which you can change.
-
-<img class="stretch" data-src="media/img/glitch2.jpg">
-
-<a href="https://glitch.com/~aframe/" target="_blank">Remix the A-Frame Starter Glitch</a>  <!-- .element: class="cta-button glitch" -->
-
----
-
-## Glitch &mdash; Editing Code
-
-> Once you've [remixed the A-Frame Starter Glitch](https://glitch.com/~aframe/),
-> check out where you'll be editing your code. Poke around and see that you can
-> even edit the backend server code, upload assets, create new files, or invite
-> others to edit with you!
-
-<img class="stretch" data-src="media/img/glitch3.jpg">
-
----
-
-## Glitch &mdash; Viewing Your Project
-
-> After you've poked around the editor, see the project live.
-
-<img class="stretch" data-src="media/img/glitch4.jpg">
-
----
-
-## Glitch &mdash; Exporting Your Project
-
-> At any time, if you want to download your project or export to GitHub, see the
-> *Advanced Options* menu. Downloading will give you a `.tgz` file which you can
-> unzip. For A-Frame projects, you mostly care about what's in the `public/`
-> folder, and ignore all the server-side code.
-
-<img class="stretch" data-src="media/img/glitch5.jpg">
-
-If you download a project, you
-might be interested in setting up a web development environment in the next
-section **&darr;**. Else, head **&rarr;** to start with A-Frame!
-
----
-
-## [Optional] Set Up a Web Development Environment
-
-> You can set up a full web development environment on your local machine, rather
-> than use Glitch's online web development environment.
-
-<img class="stretch" data-src="media/img/webdevenv1.jpg">
-
-1. **Get a text editor:** [Atom](https://atom.io) is a good one to start with
-2. **Set up a local server:** Download and run [Mongoose
-Server](https://www.cesanta.com/products/binary) or run `python -m
-SimpleHTTPServer` in a terminal
-3. **Create a file `index.html`** and copy A-Frame code from the Glitch samples
-4. **Run a local server** in the same directory as the HTML file
-5. **Open the local server's URL** in your browser (e.g., `http://localhost:8000`)
-6. **Make changes** to your HTML file and refresh your browser to see the changes
-7. Optional: check out [ngrok](https://ngrok.io) to let any device on any
-network have access to your local server
-
----
-
-## [Optional] Set Up a Web Development Environment &mdash; Get a Text Editor
-
-> [Atom](https://atom.io) is a good text editor to start if you don't have one.
-> Other popular options are [Notepad++](https://notepad-plus-plus.org/),
-> [Sublime](https://www.sublimetext.com/), [Brackets](http://brackets.io/), or
-> [vim](http://www.vim.org/download.php).
-
-<img class="stretch" data-src="media/img/webdevenv2.jpg">
-
----
-
-## [Optional] Set Up a Web Development Environment &mdash; Set Up a Local Server
-
-> You'll need a local HTTP server to serve your files to the browser.
-
-<div class="captioned-image-row small">
-  <div>
-    <img data-src="https://cloud.githubusercontent.com/assets/8731271/24021623/10654d22-0a5f-11e7-9769-63cdff91637c.png">
-    <a href="https://www.cesanta.com/products/binary">Mongoose Binary</a>
-  </div>
-  <div>
-    <img data-src="https://www.python.org/static/opengraph-icon-200x200.png">
-    <code>python -m SimpleHTTPServer 8080</code>
-  </div>
-  <div>
-    <img data-src="https://www.echosteg.com/images/blog/standard/nodejs_logo.png">
-    <a href="https://docs.npmjs.com/getting-started/installing-node">Node + npm + live-server</a>
-  </div>
-</div>
-
----
-
-## [Optional] Set Up a Web Development Environment &mdash; Use ngrok
-
-> Optionally, you can use [ngrok](https://ngrok.com/) to help develop your
-> A-Frame project on a smartphone without having to do the local IP address
-> dance.
-
-1. Download and unzip [ngrok](https://ngrok.com/download/) anywhere
-2. Run ngrok, providing it the port number of your local server (`./ngrok http 8080`)
-3. In the output, ngrok will give you a URL with a bunch of letters and numbers (e.g., `https://abcdef123456.ngrok.io`)
-4. Open that URL on another device on any network (such as a smartphone or another computer)
-
-<img class="stretch" data-src="media/img/webdevenv3.jpg">
 
 ------
 ## HTML <sup class="reference">[3]</sup>
@@ -206,20 +125,47 @@ positions, rotations, scale) and get a feel for the workflow.
 
 ---
 
+## Starter code
+
+Copy and post the code below or from Codepen here: https://codepen.io/ajs51210/pen/pwPEaE
+
+```html
+<html>
+  <head>
+    <title>Hello, WebVR! - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
+```
+---
+
 ## Start with *Hello, WebVR* &mdash; Position
 
 > Position defines where objects are in 3D space (X, Y, Z) in meters. Change
 > the `position` of the objects via the `position` HTML attribute values. [Read about
 > positions](https://aframe.io/docs/master/components/position.html).
 
-<a href="https://glitch.com/~aframe-school-position" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+> 1 unit = 1 meter
 
 1. Move the cylinder left by *decreasing* the `position`'s X value
 2. Move the box up by *increasing * the `position`'s Y value
 3. Move the sphere back by *decreasing* the `position`'s Z value
 4. **Extra Credit:** Add `<a-ring>` as a child of `<a-sphere>` and give it a position to see relative positions
 
-<img class="stretch" data-src="media/img/positionresult.jpg">
+<div>
+  <img style="height: 225px; width: 250px;" data-src="media/img/positionresult.jpg">
+  <img style="height: 225px; width: 250px;" data-src="media/img/right-handed-rule.jpg">
+</div>
 
 <a href="https://aframe-school-position.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
