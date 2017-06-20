@@ -502,6 +502,18 @@ div.slide__boilerplate + video {
   vertical-align: middle;
 }
 
+.reveal .cta-button.codepen:before {
+  background-image: url(../media/img/codepensvg.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  content: '';
+  margin-right: 8px;
+  height: 32px;
+  width: 32px;
+  vertical-align: middle;
+}
+
 .reveal p code,
 .reveal li code {
   background: #DADADA;
