@@ -3,6 +3,8 @@
 <!-- .slide: data-background="media/img/TACC.jpeg" -->
 #A-frame: hand's on Tutorial<sup class="reference">[1][2]</sup>
 
+https://andrewsolis.github.io/aframe-school/#/
+
 <!-- NOTES -->
 - Hand's on Built on to of other presentations
 - First going to give a brief overview of basic HTML then jump right in
