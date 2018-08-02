@@ -1,7 +1,7 @@
 <!-- Title slide. -->
 
-<!-- .slide: data-background="media/img/TACC.jpeg" -->
-#A-frame: hand's on Tutorial<sup class="reference">[1][2]</sup>
+<!-- .slide: data-background="media/img/TACC_Slide.png" class="dark-text center" -->
+#A-frame: hand's on Tutorial
 
 https://andrewsolis.github.io/aframe-school/#/
 
@@ -13,7 +13,7 @@ https://andrewsolis.github.io/aframe-school/#/
 # Resources
 
 * Sign up for a free [Codepen.io](https://codepen.io/) account to host your demo project
-* Have a copy of the [A-frame documentation](https://aframe.io/docs/0.5.0/introduction/) open as a reference
+* Have a copy of the [A-frame documentation](https://aframe.io/docs/0.8.0/introduction/) open as a reference
 
 #### Optional
 
@@ -126,7 +126,7 @@ anything up
 ## Start with *Hello, WebVR*
 
 > A-Frame provides easy-to-use HTML elements for starters called
-[primitives](https://aframe.io/docs/0.5.0/primitives/). In the sections below,
+[primitives](https://aframe.io/docs). In the sections below,
 we'll modify basic meshes through HTML attributes (e.g., change colors,
 positions, rotations, scale) and get a feel for the workflow.
 
@@ -145,7 +145,7 @@ positions, rotations, scale) and get a feel for the workflow.
 > 1 unit = 1 meter
 
 <p style="display: inline-block;">
-  <a class="cta-button glitch" href="https://glitch.com/~aframe-school-position" target="_blank">Remix Lesson on Glitch</a>  
+  <a class="cta-button glitch" href="https://glitch.com/edit/#!/asolis-aframe-1" target="_blank">Remix Lesson on Glitch</a>  
 </p>
 
 <p style="display: inline-block;">
@@ -188,11 +188,11 @@ and give it a rotation to see relative rotations
 ## Start with *Hello, WebVR* &mdash; Add Primitives
 
 > Add primitives the scene by adding HTML elements under `<a-scene>`.  [Read
-> about primitives](https://aframe.io/docs/0.5.0/primitives/).
+> about primitives](https://aframe.io/docs/0.8.0/primitives/).
 
-1. Add [`<a-torus-knot>`](https://aframe.io/docs/0.5.0/primitives/a-torus-knot.html) to the left
-2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.5.0/primitives/a-dodecahedron.html) to the right
-3. Add [`<a-text>`](https://aframe.io/docs/0.5.0/primitives/a-text.html) aligned in the center
+1. Add [`<a-torus-knot>`](https://aframe.io/docs/0.8.0/primitives/a-torus-knot.html) to the left
+2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.8.0/primitives/a-dodecahedron.html) to the right
+3. Add [`<a-text>`](https://aframe.io/docs/0.8.0/primitives/a-text.html) aligned in the center
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24266010/9c57cbe4-0fc2-11e7-968f-168f3649d109.png">
 
@@ -204,12 +204,9 @@ and give it a rotation to see relative rotations
 
 > We'll be adding image textures to meshes to more appearance than a flat color.
 > [Find your own images
-> online](https://aframe.io/docs/0.5.0/introduction/faq.html#where-can-i-find-assets),
+> online](https://aframe.io/docs/0.8.0/introduction/faq.html#where-can-i-find-assets),
 > and upload them through the assets section in Glitch or through the uploader on
-> [cdn.aframe.io](https://cdn.aframe.io) or [Cloudinary](http://cloudinary.com/). Wherever else you may upload, make sure
-> it's being served with
-> [CORS](https://developer.mozilla.org/docs/Web/HTTP/Access_control_CORS) and
-> over HTTPS.
+> [cdn.aframe.io](https://cdn.aframe.io) or [Cloudinary](http://cloudinary.com/).
 
 <img class="stretch" data-src="media/img/glitchasset.jpg">
 
@@ -221,10 +218,10 @@ assets section (pictured above).
 ## Add Textures &mdash; Image Textures
 
 > Fill in the `src` HTML attributes with image URLs. [Read about applying an
-> image texture](https://aframe.io/docs/0.5.0/guides/building-a-basic-scene.html#applying-an-image-texture).
+> image texture](https://aframe.io/docs/0.8.0/guides/building-a-basic-scene.html#applying-an-image-texture).
 
 <p style="display: inline-block;">
-  <a class="cta-button glitch" href="https://glitch.com/~aframe-school-textures/" target="_blank">Remix Lesson on Glitch</a>  
+  <a class="cta-button glitch" href="https://glitch.com/edit/#!/asolis-aframe-2" target="_blank">Remix Lesson on Glitch</a>  
 </p>
 
 <p style="display: inline-block;">
@@ -304,6 +301,45 @@ assets section (pictured above).
 
 ------
 
+## Loading Objects
+
+> You'll be importing a DNA model into your scene that you can view on your phone
+> (codepen only) or laptop. Read about [3D Models](https://aframe.io/docs/0.8.0/introduction/models.html)
+> and [gltf file format](https://aframe.io/docs/0.8.0/components/gltf-model.html#why-use-gltf) which is the
+> model you will be loading.
+
+<p style="display: inline-block;">
+  <a class="cta-button glitch" href="https://glitch.com/edit/#!/aframe-loading-object" target="_blank">Remix Lesson on Glitch</a>  
+</p>
+
+<p style="display: inline-block;">
+  <a class="cta-button codepen" href="https://codepen.io/ajs51210/pen/rrvzar" target="_blank">Fork Lesson on Codepen</a>  
+</p>
+
+1. Add [`<a-entity>`](https://aframe.io/docs/0.8.0/components/gltf-model.html#why-use-gltf) to load the gltf model (link in code)
+2. Repositon `<a-entity>` to `0 1.8 -1`
+3. Scale `<a-entity>` `0.01 0.01 0.01`
+
+<img class="stretch" data-src="media/img/dna_photo.png">
+
+<a href="https://codepen.io/ajs51210/full/jpxaNP/" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
+
+---
+
+## Animating Objects
+
+> Animate the dna object to rotate about the y-axis.
+
+1. Add the animation component from [the Registry](https://aframe.io/registry/) via a `<script>` tag. 
+2. Attach the animation configured to use `property: rotation`, `to:0 360 0`, `dur: 2000`, and `loop: true`.
+3. Watch your dna move!
+
+<img style="display : block; margin-left: auto; margin-right: auto;" class="stretch" data-src="media/video/dna_gif.gif">
+
+<a href="https://codepen.io/ajs51210/live/RByjVd" target="_blank">View Result</a>  <!-- .element class="cta-button" -->
+
+------
+
 ## Compose with Entity-Component &mdash; Break Primitives Down
 
 > Behind the easy-to-use primitive elements, A-Frame is based on an
@@ -318,8 +354,8 @@ assets section (pictured above).
   <a class="cta-button codepen" href="https://codepen.io/ajs51210/pen/xrddZy" target="_blank">Fork Lesson on Codepen</a>  
 </p>
 
-[geometry]: https://aframe.io/docs/0.5.0/components/geometry.html
-[material]: https://aframe.io/docs/0.5.0/components/material.html
+[geometry]: https://aframe.io/docs/0.8.0/components/geometry.html
+[material]: https://aframe.io/docs/0.8.0/components/material.html
 
 1. Convert `<a-box>` to `<a-entity>` with [geometry component][geometry] and [material component][material]. Configure the geometry component to be `primitive: box`
 2. Convert `<a-sphere>` to `<a-entity>` with geometry component and material component. Configure the geometry component to be `primitive: sphere`
@@ -338,9 +374,9 @@ assets section (pictured above).
 > compose this type of object.
 
 1. Look for `<a-entity id="lightSphere">`
-2. Attach the [geometry component](https://aframe.io/docs/0.5.0/components/geometry.html) configured to use `primitive: sphere` to the entity
-3. Attach the [material component](https://aframe.io/docs/0.5.0/components/material.html) configured to use `color: #FFF` and `shader: flat` to the entity
-4. Attach the [light component](https://aframe.io/docs/0.5.0/components/light.html) configured to use `type: point` to the entity
+2. Attach the [geometry component](https://aframe.io/docs/0.8.0/components/geometry.html) configured to use `primitive: sphere` to the entity
+3. Attach the [material component](https://aframe.io/docs/0.8.0/components/material.html) configured to use `color: #FFF` and `shader: flat` to the entity
+4. Attach the [light component](https://aframe.io/docs/0.8.0/components/light.html) configured to use `type: point` to the entity
 5. **Extra Credit:** Add the animation component from [the Registry](https://aframe.io/registry/) via a `<script>' tag. Attach the animation configured to use `property: position` and `dir: alternate` and `loop: true` and provide a position value for `to: <POSITION>`
 
 <p style="display: inline-block;">
@@ -396,7 +432,7 @@ with `property: scale`, `loop: true`, and `to: 1.1 1.1 1.1`
 > entities. A-Frame is not just HTML; A-Frame provides access to JavaScript,
 > DOM APIs, and three.js underneath for full control.  [Read about *Using
 > JavaScript and DOM APIs* with
-> A-Frame](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html).
+> A-Frame](https://aframe.io/docs/0.8.0/guides/using-javascript-and-dom-apis.html).
 
 <p style="display: inline-block;">
   <a class="cta-button glitch" href="https://glitch.com/~aframe-school-js" target="_blank">Remix Lesson on Glitch</a>  
@@ -423,7 +459,7 @@ through the browser console.
 > and
 > [`document.querySelectorAll()`](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll)
 > to get a reference to the scene and its entities.  [Read about querying for
-> entities](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#getting-entities-by-querying-and-traversing).
+> entities](https://aframe.io/docs/0.8.0/guides/using-javascript-and-dom-apis.html#getting-entities-by-querying-and-traversing).
 
 <p style="display: inline-block;">
   <a class="cta-button glitch" href="https://glitch.com/~aframe-school-js" target="_blank">Remix Lesson on Glitch</a>  
@@ -446,10 +482,10 @@ through the browser console.
 ## Use JavaScript &mdash; Modifying Entities
 
 > Use
-> [`Entity.setAttribute()`](https://aframe.io/docs/0.5.0/core/entity.html#setattribute-attr-value-componentattrvalue)
+> [`Entity.setAttribute()`](https://aframe.io/docs/0.8.0/core/entity.html#setattribute-attr-value-componentattrvalue)
 > to modify entities after retrieving them from the previous exercise. [Read
 > about modifying
-> entities](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#modifying-an-entity).
+> entities](https://aframe.io/docs/0.8.0/guides/using-javascript-and-dom-apis.html#modifying-an-entity).
 
 <p style="display: inline-block;">
   <a class="cta-button glitch" href="https://glitch.com/~aframe-school-js" target="_blank">Remix Lesson on Glitch</a>  
@@ -472,7 +508,7 @@ through the browser console.
 > Use [`document.createElement()`](https://developer.mozilla.org/docs/Web/API/Document/createElement)
 > to create entities, `.setAttribute()` to configure them, and `.appendChild()`
 > to add them to the scene.  [Read about creating
-> entities](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#creating-an-entity-with-createelement).
+> entities](https://aframe.io/docs/0.8.0/guides/using-javascript-and-dom-apis.html#creating-an-entity-with-createelement).
 
 <p style="display: inline-block;">
   <a class="cta-button glitch" href="https://glitch.com/~aframe-school-js" target="_blank">Remix Lesson on Glitch</a>  
@@ -497,7 +533,7 @@ random positions and scales (use `Math.random()`)
 > Then manually emit that event to see that handler function execute. Later we
 > can use event listeners to change the scene based on user input or other
 > events. [Read about events and event listeners with
-> A-Frame](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#events-and-event-listeners).
+> A-Frame](https://aframe.io/docs/0.8.0/guides/using-javascript-and-dom-apis.html#events-and-event-listeners).
 
 <p style="display: inline-block;">
   <a class="cta-button glitch" href="https://glitch.com/~aframe-school-js" target="_blank">Remix Lesson on Glitch</a>  
@@ -510,7 +546,7 @@ random positions and scales (use `Math.random()`)
 1. Register an event listener on the box to listen to the `foo` event. In the
    handler function, change the box's color
 2. Emit the `foo` event with
-[`Entity.emit()`](https://aframe.io/docs/0.5.0/core/entity.html#emit-name-detail-bubbles)
+[`Entity.emit()`](https://aframe.io/docs/0.8.0/core/entity.html#emit-name-detail-bubbles)
 and see the box change its color
 
 <a href="https://aframe-school-js.glitch.me/solution4.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
@@ -520,10 +556,10 @@ and see the box change its color
 ## Add Gaze-Based Cursor Interactions &mdash; Add Cursor Entity
 
 > Use the gaze-based [`cursor`
-> component](https://aframe.io/docs/0.5.0/components/cursor.html) to provide
+> component](https://aframe.io/docs/0.8.0/components/cursor.html) to provide
 > the ability to interact with entities (primarily for smartphones).  [Read
 > about building a 360&deg; image
-> gallery](https://aframe.io/docs/0.5.0/guides/building-with-components.html).
+> gallery](https://aframe.io/docs/0.8.0/guides/building-with-components.html).
 
 <p style="display: inline-block;">
   <a class="cta-button glitch" href="https://glitch.com/~aframe-school-cursor" target="_blank">Remix Lesson on Glitch</a>  
@@ -538,9 +574,9 @@ an entity with the `cursor` component which will provide those events based on
 user input.  Note these events are not provided by the browser, but through
 A-Frame.
 
-1. Add [`<a-camera>`](https://aframe.io/docs/0.5.0/components/camera.html) entity.
+1. Add [`<a-camera>`](https://aframe.io/docs/0.8.0/components/camera.html) entity.
    Previously A-Frame was providing a default camera
-2. Add [`<a-cursor>`](https://aframe.io/docs/0.5.0/components/cursor.html) entity
+2. Add [`<a-cursor>`](https://aframe.io/docs/0.8.0/components/cursor.html) entity
    as a child underneath the camera entity
 3. Drag the camera around the click on the panels on desktop. On smartphones,
    stare at the panels to trigger clicks (i.e., gaze-based)
@@ -554,7 +590,7 @@ A-Frame.
 ## Add Gaze-Based Cursor Interactions &mdash; Handle Events
 
 > Use the `click`, `mouseenter`, `mouseleave` events provided by the gaze-based
-> [`cursor` component](https://aframe.io/docs/0.5.0/components/cursor.html) to
+> [`cursor` component](https://aframe.io/docs/0.8.0/components/cursor.html) to
 > change the properties of an object.
 
 The Glitch code will have the project structure set up. We can add JavaScript
@@ -654,7 +690,7 @@ the animations of the model at once.
 </p>
 
 
-1. Find `<a-entity id="left">` and add the [hand-controls component](https://aframe.io/docs/0.5.0/components/hand-controls.html)
+1. Find `<a-entity id="left">` and add the [hand-controls component](https://aframe.io/docs/0.8.0/components/hand-controls.html)
 configured to the left hand (`hand-controls="left"`)
 2. Find `<a-entity id="right">` and add the hand-controls component
 configured to the right hand (`hand-controls="right"`)
