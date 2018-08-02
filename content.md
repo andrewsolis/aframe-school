@@ -338,6 +338,18 @@ assets section (pictured above).
 
 <a href="https://codepen.io/ajs51210/live/RByjVd" target="_blank">View Result</a>  <!-- .element class="cta-button" -->
 
+---
+
+## Viewing in AR
+
+> Go to the link( https://codepen.io/ajs51210/full/pZLYee ) on your mobile phone(preferable chrome)
+> point your camera phone at the image and see it pop up! (Hopefully). 
+
+code: https://codepen.io/ajs51210/pen/pZLYee
+
+<img class="stretch" data-src="media/img/HIRO.jpg">
+
+
 ------
 
 ## Compose with Entity-Component &mdash; Break Primitives Down
