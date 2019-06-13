@@ -188,7 +188,7 @@ and give it a rotation to see relative rotations
 ## Start with *Hello, WebVR* &mdash; Add Primitives
 
 > Add primitives the scene by adding HTML elements under `<a-scene>`.  [Read
-> about primitives](https://aframe.io/docs/0.9.0/introduction/html-and-primitives.html/).
+> about primitives](https://aframe.io/docs/0.9.0/introduction/html-and-primitives.html).
 
 1. Add [`<a-torus-knot>`](https://aframe.io/docs/0.8.0/primitives/a-torus-knot.html) to the left
 2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.8.0/primitives/a-dodecahedron.html) to the right
@@ -389,7 +389,7 @@ code: https://codepen.io/ajs51210/pen/pZLYee
 2. Attach the [geometry component](https://aframe.io/docs/0.8.0/components/geometry.html) configured to use `primitive: sphere` to the entity
 3. Attach the [material component](https://aframe.io/docs/0.8.0/components/material.html) configured to use `color: #FFF` and `shader: flat` to the entity
 4. Attach the [light component](https://aframe.io/docs/0.8.0/components/light.html) configured to use `type: point` to the entity
-5. **Extra Credit:** Add the animation component from [the Registry](https://aframe.io/registry/) via a `<script>' tag. Attach the animation configured to use `property: position` and `dir: alternate` and `loop: true` and provide a position value for `to: <POSITION>`
+5. **Extra Credit:** Add the animation component from [the Registry](https://aframe.io/registry/) via a `<script>` tag. Attach the animation configured to use`property: position` and `dir: alternate` and `loop: true` and provide a position value for `to: <POSITION>`
 
 <p style="display: inline-block;">
   <a class="cta-button glitch" href="https://glitch.com/~aframe-school-ecs-light-sphere" target="_blank">Remix Lesson on Glitch</a>  
