@@ -188,7 +188,7 @@ and give it a rotation to see relative rotations
 ## Start with *Hello, WebVR* &mdash; Add Primitives
 
 > Add primitives the scene by adding HTML elements under `<a-scene>`.  [Read
-> about primitives](https://aframe.io/docs/0.8.0/primitives/).
+> about primitives](https://aframe.io/docs/0.9.0/introduction/html-and-primitives.html/).
 
 1. Add [`<a-torus-knot>`](https://aframe.io/docs/0.8.0/primitives/a-torus-knot.html) to the left
 2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.8.0/primitives/a-dodecahedron.html) to the right
